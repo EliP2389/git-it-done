@@ -10,4 +10,4 @@ fetch(apiUrl).then(function(response){
 });
 };
 
-getUserRepos("instagram"); 
+getUserRepos(); 
