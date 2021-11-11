@@ -2,6 +2,10 @@ var repoNameEl = document.querySelector("#repo-name");
 var issueContainerEl = document.querySelector("#issues-container");
 var limitWarningEl = document.querySelector("#limit-warning");
 
+var getFeaturedRepos = function(language) {
+  var apiUrl = "https://api.github.com/search/repositories?q=" + language + "+is:featured&sort=help-wanted-issues";
+  fetch(apiUrl);
+};
 
 var getRepoName = function(){
   // grab repo name from url string
